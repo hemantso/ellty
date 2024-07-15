@@ -1,0 +1,45 @@
+.custom-checkbox {
+  width: 25px;
+  height: 25px;
+  background: #FFFFFF;
+  border-radius: 6px;
+  border: 1px solid #CDCDCD;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.custom-checkbox.checked {
+  background: #2469F6;
+  border-color: #5087F8;
+}
+
+.custom-checkbox.checked .checkmark {
+  visibility: visible;
+}
+
+.custom-checkbox.hovered {
+  background: #5087F8;
+}
+
+.custom-checkbox.hovered .checkmark {
+  visibility: visible;
+}
+
+.custom-checkbox.active {
+  background: #BDBDBD;
+}
+
+.custom-checkbox .checkmark {
+  position: absolute;
+  visibility: hidden;
+  width: 16px;
+  height: 16px;
+}
+
+.custom-checkbox.checked .checkmark {
+  visibility: visible;
+}
